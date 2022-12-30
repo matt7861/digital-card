@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap");
+
+:root {
+  --navy: #23252c;
+  --navy-light: #374151;
+  --navy-dark: #1a1b21;
+  --navy-darker: #161619;
+  --blue: #5093e2;
+  --tan: #f3bf99;
+  --grey: #d1d5db;
+  --white: #fff;
+  --black: #000;
+  --primary-font: "Inter", sans-serif;
+}
+
+body {
+  color: var(--white);
+  background-color: var(--navy);
+  font-family: var(--primary-font);
+}
+
+#root {
+  background-color: var(--navy-dark);
+  max-width: 350px;
+  margin: 50px auto;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 30px;
+  margin-bottom: 5px;
+}
+
+h2 {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 15px;
+}
+
+h3 {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+p {
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 1.5;
+}
+
+.button {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  border-radius: 6px;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+  display: flex;
+  align-items: center;
+  width: calc(50% - 15px);
+  justify-content: center;
+  padding: 10px 20px;
+}
+
+.button img {
+  margin-right: 8px;
+}
+
+.button--white {
+  background-color: var(--white);
+  color: var(--navy-light);
+  border: 1px solid var(--grey);
+}
+
+.button--white img {
+  height: 10px;
+  width: auto;
+}
+
+.button--blue {
+  background-color: var(--blue);
+  color: var(--white);
+}
+
+.button--blue img {
+  height: 12px;
+  width: auto;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 15px;
+}
+
+.site {
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 1.5;
+  color: var(--white);
+}
+
+a {
+  text-decoration: none;
+}
+
+.about__inner {
+  padding: 20px 35px 33px;
+  text-align: center;
+}
+
+.about h2 {
+  color: var(--tan);
+}
+
+.info,
+.interests {
+  padding: 0 35px;
+}
+
+.info {
+  margin-bottom: 10px;
+}
+
+.interests {
+  margin-bottom: 33px;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 35px;
+  background-color: var(--navy-darker);
+}
+
+footer img {
+  height: 25px;
+}
+
+footer a:not(:last-of-type) img {
+  margin-right: 23px;
+}
